@@ -17,7 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from SaveKid.views import index_page
+
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("KidSave/", include ("SaveKid.urls"))
+    path("", index_page, name='index_page'),
+    path("buy/", index_page, name='buy_page'),
+    path("about/", index_page, name='about_page'),
 ]
