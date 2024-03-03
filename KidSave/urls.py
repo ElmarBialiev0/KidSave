@@ -21,7 +21,7 @@ from SaveKid.views import index_page, buy_page, about_page
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("index/", index_page, name='index_page'),
+    path("", index_page, name='index_page'),
     path("buy/", buy_page, name='buy_page'),
     path("about/", about_page, name='about_page'),
 ]
