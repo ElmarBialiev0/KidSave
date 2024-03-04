@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,32 +10,8 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
 </head>
-<nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Save Kids</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02"
-                aria-controls="navbarsExample02" aria-expanded="false" aria-label="Переключить навигацию">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExample02">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{% url 'index_page' %}">Главная</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'about_page' %}">О нас</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'buy_page' %}">Купить спасательный набор</a>
-                </li>
-            </ul>
-            <form>
-                <input class="form-control" type="text" placeholder="Поиск" aria-label="Поиск">
-            </form>
-        </div>
-    </div>
-</nav>
+  {% include 'nav.html' %}
 <div class="container d-flex flex-column">
     <p class="m-3">Добро пожаловать на сайт SaveKid - вашего надежного партнера в обеспечении безопасности вашего ребенка! Мы
         предлагаем инновационные спасательные жилеты, разработанные специально для защиты детей от травм и других
@@ -48,6 +25,49 @@
         безопасности.
     </p>
 
+
+    <div class="container text-center">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="rounded-circle mx-auto my-2" style="width: 150px; height: 150px; overflow: hidden;">
+                <img src="photo_1_2024-03-04_09-45-46.jpg" class="w-100 h-100" alt="Person 1">
+            </div>
+            <p>Иван Иванов</p>
+        </div>
+        <div class="col-md-4">
+            <div class="rounded-circle mx-auto my-2" style="width: 150px; height: 150px; overflow: hidden;">
+                <img src="person2.jpg" class="w-100 h-100" alt="Person 2">
+            </div>
+            <p>Петр Петров</p>
+        </div>
+        <div class="col-md-4">
+            <div class="rounded-circle mx-auto my-2" style="width: 150px; height: 150px; overflow: hidden;">
+                <img src="person3.jpg" class="w-100 h-100" alt="Person 3">
+            </div>
+            <p>Анна Сидорова</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="rounded-circle mx-auto my-2" style="width: 150px; height: 150px; overflow: hidden;">
+                <img src="person4.jpg" class="w-100 h-100" alt="Person 4">
+            </div>
+            <p>Елена Павлова</p>
+        </div>
+        <div class="col-md-4">
+            <div class="rounded-circle mx-auto my-2" style="width: 150px; height: 150px; overflow: hidden;">
+                <img src="person5.jpg" class="w-100 h-100" alt="Person 5">
+            </div>
+            <p>Михаил Козлов</p>
+        </div>
+        <div class="col-md-4">
+            <div class="rounded-circle mx-auto my-2" style="width: 150px; height: 150px; overflow: hidden;">
+                <img src="person6.jpg" class="w-100 h-100" alt="Person 6">
+            </div>
+            <p>Ольга Никитина</p>
+        </div>
+    </div>
+</div>
 
 </div>
 

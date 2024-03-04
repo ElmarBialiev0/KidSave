@@ -7,33 +7,8 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
 </head>
-<nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Save Kids</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02"
-                aria-controls="navbarsExample02" aria-expanded="false" aria-label="Переключить навигацию">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExample02">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{% url 'index_page' %}">Главная</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'about_page' %}">О нас</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'buy_page' %}">Купить спасательный набор</a>
-                </li>
-            </ul>
-            <form>
-                <input class="form-control" type="text" placeholder="Поиск" aria-label="Поиск">
-            </form>
-        </div>
-    </div>
-</nav>
-
+  {% include 'nav.html' %}
 
 <p class="text-black m-5" float="center"><br>   Добро пожаловать на сайт SaveKid - вашего надежного партнера в обеспечении безопасности вашего ребенка!
     <br>   Мы предлагаем инновационные спасательные жилеты, разработанные специально для защиты детей от
